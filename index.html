@@ -13,7 +13,23 @@
     
 </head>
 <body>
-    <section id="section0">
+    <div class="pos-f-t d-md-none">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+                <a href="" id="mob-about-nav"><h5 class="text underlined">About us</h5></a>
+                <a href="" id="mob-locations-nav"><h5 class="text underlined">Locations</h5></a>
+                <a href="" id="mob-menu-nav"><h5 class="text underlined">Menu</h5></a>
+                <a href="#instagram" id="mob-instagram-nav"><h5 class="text underlined">Visit card</h5></a>
+                <a href="" id="mob-franchise-nav"><h5 class="text underlined">Franchise</h5></a>
+            </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </div>
+    <section style="position: relative;">
             <div class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active" style="background-image: url('resources/img/3.jpg')">
@@ -25,79 +41,46 @@
                 </div>
             </div>
             <div class="logo">
-                <img src="resources/img/logo.png" alt="Logo" width="200" class="shadow-lg">
+                <img src="resources/img/logo.jpg" alt="Logo" width="200" class="shadow-lg">
             </div>
 
-            <div id="contact">
-                <nav class="nav nav-pills nav-justified">
-                    <a class="nav-item nav-link" href="#">Active</a>
-                    <a class="nav-item nav-link" href="#">Link</a>
-                    <a class="nav-item nav-link" href="#">Link</a>
-                    <a class="nav-item nav-link" href="#">Disabled</a>
-                </nav>
+            <div id="contact" class="d-none d-md-block">
+                <div class="nav nav-pills nav-justified">
+                    <a class="nav-item nav-link" id="about-us-nav" href="#">About us</a>
+                    <a class="nav-item nav-link" id="locations-nav" href="#">Locations</a>
+                    <a class="nav-item nav-link" id="menu-nav" href="#">Menu</a>
+                    <a class="nav-item nav-link" id="visit-card-nav" href="#">Visit Card</a>
+                    <a class="nav-item nav-link" id="franchise-nav" href="#">Franchise</a>
+                </div>
             </div>  
     </section>
 
-    <section id="navbar">
-        <nav class="navbar navbar-expand-lg">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggler" aria-controls="toggler" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        <nav class="collapse navbar-collapse" id="toggler">
-            <a class="navbar-brand" id="nav0">
-                <img src="resources/img/logo.png" alt="TudorBurgers" width="40" height="40">
-            </a>
-            <a class="nav-item nav-link active" href="#section1" id="nav1" data-toggle="collapse" data-target=".navbar-collapse.show"><span>Locatie 1</span></a>
-            <a class="nav-item nav-link" href="#section2" id="nav2" data-toggle="collapse" data-target=".navbar-collapse.show"><span>Locatie 2</span></a>
-            <a class="nav-item nav-link" href="#section3" id="nav3" data-toggle="collapse" data-target=".navbar-collapse.show"><span>Locatie 3</span></a>
-            <a class="nav-item nav-link" href="#section4" id="nav4" data-toggle="collapse" data-target=".navbar-collapse.show"><span>Locatie 4</span></a>
-            <a class="nav-item nav-link" href="#section5" id="nav5" data-toggle="collapse" data-target=".navbar-collapse.show"><span>Locatie 5</span></a>
-            <a class="nav-item nav-link" href="#section6" id="nav6" data-toggle="collapse" data-target=".navbar-collapse.show"><span>Locatie 6</span></a>
-            <a class="nav-item nav-link" href="#section7" id="nav7" data-toggle="collapse" data-target=".navbar-collapse.show"><span>Feed</span></a>
-            <a class="nav-item nav-link" href="#section8" id="nav8" data-toggle="collapse" data-target=".navbar-collapse.show"><span>Vendor Login</span></a>
-        </nav>
-        </nav>
-    </section>
 
-
-
-    <section style="height:50vh;" id="section1" class="section">
-
-    </section>
-
-    <section style="height:50vh;" id="section2" class="section">
-
-    </section>
-
-    <section style="height:50vh;" id="section3" class="section">
-
-    </section>
-
-    <section style="height:50vh;" id="section4" class="section">
-
-    </section>
-
-    <section style="height:50vh;" id="section5" class="section">
-
-    </section>
-
-    <section style="height:50vh;" id="section6" class="section">
-
-    </section>
-
-    <section id="section7" class="section">
+    <section class="section" id="instagram">
             <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="https://cdn.lightwidget.com/widgets/dc22107cc9d951b98be03a01bec0dd0f.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
     </section>
+
+    <footer>
+        <section id="footer-up">
+            <span>Follow Tudor Gourmet Burgers</span>
+            <ul>
+                <li>Facebook</li>
+                <li>Instagram</li>
+                <li>Google Plus</li>
+                <li>Trip Advisor</li>
+            </ul>
+        </section>
+        <section id="footer-down">
+            <ul>
+                <li>About us</li>
+                <li>Locations</li>
+                <li>Menu</li>
+                <li>Visit Card</li>
+                <li>Franchise</li>
+            </ul>
+        </section>
+    </footer>
     
-    <section style="height:50vh;" id="section8" class="section">
-
-    </section>
-
-
-
-
-
-
 
     <script src="https://code.jquery.com/jquery-3.1.0.js" crossorigin="anonymous"></script>
     <script src="resources/js/script.js"></script>

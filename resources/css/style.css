@@ -1,11 +1,19 @@
+@font-face {
+    font-family: HelveticaThin;
+    src: url(../fonts/HelveticaThin.ttf);
+}
+
+@font-face {
+    font-family: HelveticaThinBolder;
+    src: url(../fonts/HelveticaThinBolder.otf);
+}
+
 body, html {
     height: 100%;
     margin: 0;
+    font-family: HelveticaThin !important;
 }
 
-#section0{
-    height:100vh;
-}
 .carousel-item {
     height: 100vh;
     min-height: 300px;
@@ -33,66 +41,60 @@ body, html {
 
 #contact{
     position: absolute;
-    bottom: 0;
+    bottom: 10%;
     opacity: 0.75;
     background-color:black;
-    width:100%;
-    height: 6.5vh;
+    width:82%;
+    left:0;
+    right:0;
+    margin: 0 auto;
+    border-radius: 10px;
+    transition: 0.5s;
 }
 
-#contact a, #navbar a{
-    color:#f5d5a0 !important;
+#contact a{
+    color: #ffffe5;
 }
 
-#navbar{
-    background-image: linear-gradient(to left, #a1775c, #754d3e, #4a2722);
+#contact .nav-item{
+    padding: 12px;
 }
 
-#navbar .active{
-    background-color: #f5d5a0;
-    color: #4a2722 !important;
+#contact:hover{
+    opacity:1;
+    transition: 0.5s;
 }
 
-#navbar .nav-item:hover{
-    text-decoration: underline;
-    
+.nav-item:hover{
+    background-color: #ffffe5;
+    color: #764318 !important;
+    border-radius: 10px !important;
+    transition: 0.5s;
 }
 
-/*Sticky navbar*/
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  
-  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-  .sticky + .content {
-    padding-top: 60px;
-  }
+#instagram{
 
-section:nth-child(even){
-    background-color: #4a2722;
-}
-section:nth-child(odd){
-      background-color: #f5d5a0;
-}
-
-#section7{
-
-    background-color: #492723;
+    background-color: #764318;
     background-image: linear-gradient(90deg, transparent 50%,
- #f5d5a0 50%);
+    #ffffe5 50%);
     background-size: 100px 100px; 
     text-align: center;
 }
 
-/*Instagram*/
-
-
-#section7 iframe{
+#instagram iframe{
     margin: 5em 0 5em 0 !important;
     width: 80vw !important;
     margin: auto;
+}
 
+.underlined{
+    color: #ffffff;
+}
+
+#footer-up{
+
+}
+
+#footer-down{
 
 }
