@@ -206,3 +206,10 @@ body {
     border-radius: 10px; /* Rounded corners */
     font-size: 15px; /* Increase font size */
 }
+
+@media only screen and (max-width: 992px) {
+    .menus {
+        width: 100vw;
+        height: 100%;
+    }
+} 
