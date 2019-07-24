@@ -12,6 +12,7 @@ body, html {
     height: 100%;
     margin: 0;
     font-family: HelveticaThin !important;
+    overflow-x: hidden;
 }
 
 .carousel-item {
@@ -49,6 +50,7 @@ body, html {
     right:0;
     margin: 0 auto;
     border-radius: 10px;
+    cursor: pointer;
     transition: 0.5s;
 }
 
@@ -72,7 +74,14 @@ body, html {
     transition: 0.5s;
 }
 
-#instagram{
+body {
+    background-color: #764318 !important;
+    background-image: linear-gradient(90deg, transparent 50%,
+    #ffffe5 50%);
+    background-size: 100px 100px; 
+}
+
+#visit-card{
 
     background-color: #764318;
     background-image: linear-gradient(90deg, transparent 50%,
@@ -81,20 +90,119 @@ body, html {
     text-align: center;
 }
 
-#instagram iframe{
+#visit-card iframe {
     margin: 5em 0 5em 0 !important;
     width: 80vw !important;
     margin: auto;
 }
 
-.underlined{
+.underlined {
     color: #ffffff;
 }
 
-#footer-up{
+#footer {
+    background-color: black;
+    color: #ffffe5;
+    display: flex;           /* establish flex container */
+    flex-direction: row;  /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+    align-items: center;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    text-align: center;
+}
+
+#footer ul {
+    list-style-type: none;
+    margin: 2px !important;
+}
+
+#footer li {
+    float: left;
+    margin: auto;
+    padding: 5px;
+}
+
+#about-us {
+    margin-top: 5vh; 
+    color: white;
+}
+
+#menus {
+    text-align: center;
+}
+
+.menus {
+    width: 45vw;
+    height: 100%;
+}
+
+#meniu-focsani {
 
 }
 
-#footer-down{
+.opacity-reduced {
+    width: 85vw;
+    opacity: 0.8;
+    background-color:black;
+    text-align: center;
+    margin: auto;
+}
 
+.parallax {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    background-image: url("../img/4.jpg");
+    height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-2 {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    background-image: url("../img/3.jpg");
+    height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-deck {
+    width: 90vw;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    margin: auto !important;
+}
+
+.card{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+.card iframe{
+    width: 100%;
+}
+
+#locations {
+    text-align: center;
+    margin: auto;
+}
+
+#top-btn {
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #764318; /* Set a background color */
+    color: #ffffe5 !important; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 8px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 15px; /* Increase font size */
 }

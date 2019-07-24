@@ -13,17 +13,18 @@
     
 </head>
 <body>
+    <button onclick="topFunction()" id="top-btn" title="Go to top"><img src="resources/img/upp.png" alt="up" height="35" width="35"></button>
     <div class="pos-f-t d-md-none">
         <div class="collapse" id="navbarToggleExternalContent">
             <div class="bg-dark p-4">
-                <a href="" id="mob-about-nav"><h5 class="text underlined">About us</h5></a>
-                <a href="" id="mob-locations-nav"><h5 class="text underlined">Locations</h5></a>
-                <a href="" id="mob-menu-nav"><h5 class="text underlined">Menu</h5></a>
-                <a href="#instagram" id="mob-instagram-nav"><h5 class="text underlined">Visit card</h5></a>
-                <a href="" id="mob-franchise-nav"><h5 class="text underlined">Franchise</h5></a>
+                <a href="#about-us" id="mob-about-nav"><h5 class="text underlined">About us</h5></a>
+                <a href="#locations" id="mob-locations-nav"><h5 class="text underlined">Locations</h5></a>
+                <a href="#menus" id="mob-menu-nav"><h5 class="text underlined">Menu</h5></a>
+                <a href="#visit-card" id="mob-instagram-nav"><h5 class="text underlined">Visit card</h5></a>
+                <a href="#franchise" id="mob-franchise-nav"><h5 class="text underlined">Franchise</h5></a>
             </div>
         </div>
-        <nav class="navbar navbar-dark bg-dark">
+        <nav class="navbar navbar-dark" style="background-color: black !important;">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="true" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -46,37 +47,133 @@
 
             <div id="contact" class="d-none d-md-block">
                 <div class="nav nav-pills nav-justified">
-                    <a class="nav-item nav-link" id="about-us-nav" href="#">About us</a>
-                    <a class="nav-item nav-link" id="locations-nav" href="#">Locations</a>
-                    <a class="nav-item nav-link" id="menu-nav" href="#">Menu</a>
-                    <a class="nav-item nav-link" id="visit-card-nav" href="#">Visit Card</a>
-                    <a class="nav-item nav-link" id="franchise-nav" href="#">Franchise</a>
+                    <a class="nav-item nav-link" id="about-us-nav">About us</a>
+                    <a class="nav-item nav-link" id="locations-nav">Locations</a>
+                    <a class="nav-item nav-link" id="menus-nav">Menu</a>
+                    <a class="nav-item nav-link" id="visit-card-nav">Visit Card</a>
+                    <a class="nav-item nav-link" id="franchise-nav">Franchise</a>
                 </div>
             </div>  
     </section>
 
+    <section id="about-us">
+        <div class="opacity-reduced">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores ipsam pariatur totam eligendi excepturi unde, tenetur aspernatur labore velit ea laudantium, omnis ducimus odit provident molestiae? Commodi, fugiat. Quas, quos?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum atque dolorem, veniam iusto quidem consectetur corporis vero veritatis? Repudiandae atque vero odit libero voluptatem rem aperiam dolorum, magnam eos tempore?
+        </div>
+    </section>
 
-    <section class="section" id="instagram">
-            <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="https://cdn.lightwidget.com/widgets/dc22107cc9d951b98be03a01bec0dd0f.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+    <section class="parallax"> 
+    </section>
+
+    <section id="locations">
+        <div class="card-deck">
+            <div class="card">
+                <iframe width="600" height="300" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC5zbu62PJCY2kvG5iBTsoz2ttdEBXrWng
+                    &amp;q=Tudor+Burgers,Bucharest" allowfullscreen="" id="googleMap">
+                </iframe>
+                <div class="card-body">
+                <h5 class="card-title">Bucuresti</h5>
+                <p class="card-text">Strada Erou Iancu Nicolae 41</p>
+                <p class="card-text">Schedule: </p>
+                <p class="card-text">0707070707</p>
+
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Open menu</small>
+                </div>
+            </div>
+            <div class="card">
+                <iframe width="600" height="300" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC5zbu62PJCY2kvG5iBTsoz2ttdEBXrWng
+                    &amp;q=Tudor+Gourmet+Burgers,Ploiesti" allowfullscreen="" id="googleMap">
+                </iframe>
+                <div class="card-body">
+                <h5 class="card-title">Ploiesti</h5>
+                <p class="card-text">Strada Erou Iancu Nicolae 41</p>
+                <p class="card-text">Schedule: </p>
+                <p class="card-text">0707070707</p>
+
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Open menu</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-deck">
+            <div class="card">
+                <iframe width="600" height="300" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC5zbu62PJCY2kvG5iBTsoz2ttdEBXrWng
+                    &amp;q=Episcopiei 11,Giurgiu" allowfullscreen="" id="googleMap">
+                </iframe>
+                <div class="card-body">
+                <h5 class="card-title">Giurgiu</h5>
+                <p class="card-text">Strada Erou Iancu Nicolae 41</p>
+                <p class="card-text">Schedule: </p>
+                <p class="card-text">0707070707</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Open menu</small>
+                </div>
+            </div>
+            <div class="card">
+                <iframe width="600" height="300" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC5zbu62PJCY2kvG5iBTsoz2ttdEBXrWng
+                    &amp;q=Tudor+Gourmet+Burgers,Focsani" allowfullscreen="" id="googleMap">
+                </iframe>
+                <div class="card-body">
+                <h5 class="card-title">Focsani</h5>
+                <p class="card-text">Strada Erou Iancu Nicolae 41</p>
+                <p class="card-text">Schedule: </p>
+                <p class="card-text">0707070707</p>
+
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Open menu</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="parallax-2"> 
+    </section>
+
+
+    <section id="menus"  style="height: 120%;">
+        <div class="row" style="height: 60vh;">
+            <div class="col">
+                <iframe src="https://drive.google.com/file/d/1gsBe1JguPebG8K_HDGZTK8pAVBp4dva2/preview" class="menus"></iframe>
+            </div>
+            <div class="col">
+                <iframe src="https://drive.google.com/file/d/1gsBe1JguPebG8K_HDGZTK8pAVBp4dva2/preview" class="menus"></iframe>
+            </div>
+        </div>
+
+        <div class="row" style="height: 60vh; margin-top: 3vh; ">
+            <div class="col">
+                <iframe src="https://drive.google.com/file/d/1gsBe1JguPebG8K_HDGZTK8pAVBp4dva2/preview" class="menus"></iframe>
+            </div>
+            <div class="col">
+                <iframe src="https://drive.google.com/file/d/1gsBe1JguPebG8K_HDGZTK8pAVBp4dva2/preview" class="menus"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="visit-card">
+            <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+            <!-- LightWidget WIDGET --><iframe src="https://cdn.lightwidget.com/widgets/dc22107cc9d951b98be03a01bec0dd0f.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+    </section>
+
+    <section id="franchise">
+
     </section>
 
     <footer>
-        <section id="footer-up">
-            <span>Follow Tudor Gourmet Burgers</span>
+        <section id="footer">
+            <span><b>Follow Tudor Gourmet Burgers on</b></span>
             <ul>
-                <li>Facebook</li>
-                <li>Instagram</li>
-                <li>Google Plus</li>
-                <li>Trip Advisor</li>
-            </ul>
-        </section>
-        <section id="footer-down">
-            <ul>
-                <li>About us</li>
-                <li>Locations</li>
-                <li>Menu</li>
-                <li>Visit Card</li>
-                <li>Franchise</li>
+                <a href="https://www.facebook.com/tudorburgers/"><li><img src="resources/img/facebook.png" alt="facebook" height="45" width="45"></li></a>
+                <a href="https://www.instagram.com/tudorburgers/"><li><img src="resources/img/instagram.png" alt="instagram" height="45" width="45"></li></a>
+                <a href=""><li><img src="resources/img/google-plus.png" alt="google-plus" height="45" width="45"></li></a>
+                <a href="https://www.tripadvisor.com/Restaurant_Review-g294458-d11796412-Reviews-Tudor_Gourmet_Burgers-Bucharest.html"><li><img src="resources/img/tripadvisor.png" alt="tripadvisor" height="45" width="45"></li></a>
             </ul>
         </section>
     </footer>
@@ -85,5 +182,6 @@
     <script src="https://code.jquery.com/jquery-3.1.0.js" crossorigin="anonymous"></script>
     <script src="resources/js/script.js"></script>
     <script src="resources/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
